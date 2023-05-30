@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University of Technology</title>
+    <link rel="icon" href="images/android-chrome-192x192.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="contact">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        <h1>Contact Us</h1>
+      </nav>
+    </section>
+
+    <!-- -----section ------ -->
+    <section class="contact-us">
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Enter your name" required />
+            <input type="email" placeholder="Enter your email address" required />
+            <input type="text" placeholder="Enter your subject" required />
+            <textarea name="" id="" cols="30" rows="8" placeholder="message"></textarea>
+            <button type="submit" class="hero-tng red-btn">Send Message</button>
+          </form>
+        </div>
+        <div>
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+              <h5>ABC Road, BLA Building</h5>
+              <p>Bengaluru, Karnataka, IN</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              <h5>+91 1234567890</h5>
+              <p>Monday to Saturday, 10AM to 6PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              <h5>info@university.com</h5>
+              <p>Email Us Your Query</p>
+            </span>
+          </div>
+        </div>
+      </section>
+      
+    <!-- -----footer---- -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+        impedit exercitationem<br />voluptatibus architecto sint, temporibus
+        deserunt iste minus, odit magni nam id unde.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+      </div>
+    </section>
+    <!-- - - javascript for toggle menu -->
+    <script>
+      var navLinks = document.querySelector(".nav-links");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
